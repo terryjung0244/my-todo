@@ -4,6 +4,7 @@ import TodoTemplate from './components/TodoTemplate';
 import { nanoid } from 'nanoid';
 import TodoItem from './components/TodoItem';
 import './App.css'
+import { MdAddCircle} from "react-icons/md";
 
 const App = () => {
 
@@ -29,6 +30,9 @@ const App = () => {
     <div>
       <TodoTemplate todoLength={todos.length}/>
       <TodoList todos={todos}/>
+      <div className='add-todo-button'>
+        <MdAddCircle />
+      </div>
     </div>
   )
 }
